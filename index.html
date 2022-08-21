@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,21 +14,231 @@
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-    <section class="promo">
-        <div class="container">
-            <div class="title title-fs16">Меня зовут Владимир Мартынчик
+    <aside class="social-block">
+        <div class="social-wrap">
+            <span class="block-text">Социальные сети</span>
+            <span class="block-wand"></span>
+            <a href="#" class="block-link">
+                <img src="/src/social-icons/social-buttons/github.svg" alt="github">
+            </a>
+            <a href="#" class="block-link">
+                <img src="/src/social-icons/social-buttons/linkedin_bold.svg" alt="instagram">
+            </a>
+            <a href="#" class="block-link">
+                <img src="/src/social-icons/social-buttons/instagram.svg" alt="facebook">
+            </a>
+            <a href="#" class="block-link">
+                <img src="/src/social-icons/social-buttons/facebook.svg" alt="facebook">
+            </a>
+        </div>
+    </aside>
+    <div class="menu">
+        <div class="menu__block">
+            <div class="menu__close">
+                <img src="src/social-icons/close.svg" alt="menu close">
             </div>
+            <nav>
+                <ul class="menu__list">
+                    <li class="menu__link"><a href="#">ПРО МЕНЯ</a></li>
+                    <li class="menu__link"><a href="#">МОЙ ОПЫТ</a></li>
+                    <li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
+                    <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
+                    <li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li>
+                    <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+            <div class="menu__social">
+                <a href="#" class="block-link">
+                    <img src="/src/social-icons/github.svg" alt="github">
+                </a>
+                <a href="#" class="block-link">
+                    <img src="/src/social-icons/instagram.svg" alt="instagram">
+                </a>
+                <a href="#" class="block-link">
+                    <img src="/src/social-icons/linkedin_bold.svg" alt="facebook">
+                </a>
+            </div>
+        </div>
+        <div class="menu__overlay"></div>
+    </div>
+    <section class="promo">
+        <div class="burger">
+            <div><span class="short-wand"></span></div>
+            <div><span class="long-wand"></span></div>
+            <div><span class="short-wand"></span></div>
+        </div>
+        <div class="container">
+            <h2 class="before title title-fs16">Меня зовут Владимир Мартынчик
+            </h2>
             <h1 class="title title-fs48">Я web-разработчик <br>
             из города Солигорск
             </h1>
             <div class="promo__btns">
                 <a href="#" class="promo__link btn">Портфолио
                 </a>
-                <a href="#" class="promo__link">Про меня
+                <a href="#" class="promo__link small-btn">Про меня
                 </a>
-
             </div>
         </div>
     </section>
+    <section class="about-me">
+      <div class="container">
+        <div class="about-wrapp">
+            <div class="about-photo">
+                <img src="src/img/Photo.jpg" alt="my photo">
+            </div>
+            <div class="about-biography">
+                <div class="before title title-fs16-about">Про меня</div>
+                <h2 class="title title-fs36">Меня зовут Вадимир</h2>
+                <div class="wand-down"></div>
+                <div class="abouit-me__descr">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Provident in incidunt ea sed ex, minus rem repellat, laboriosam
+                    quibusdam eius enim officiis! Fugiat harum omnis earum minus
+                    quaerat aspernatur tempora.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, laboriosam facilis unde omnis suscipit hic quidem neque deleniti minima ipsum sapiente optio iusto aliquid aperiam eveniet mollitia odit in ullam?
+                    lorem
+                </div>
+            </div>
+            <div class="about-way">
+                <div class="before web about-padd">
+                    <div class="figure">
+                        <img src="src/social-icons/web.svg" alt="figure of computer">
+                    </div>
+                    <div class="title title-about">Web-разработка</div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim
+                    harum labore, ad quos velit repellat maxime excepturi!
+                </div>
+                <div class="before creation about-padd">
+                    <div class="figure">
+                        <img src="src/social-icons/mob.svg" alt="figure of dectoscope">
+                    </div>
+
+                    <div class="title title-about">Разработка приложений</div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod,
+                    doloribus.
+                </div>
+                <div class="before design about-padd">
+                    <div class="figure"><img src="src/social-icons/dectoscope2.svg" alt="figure of dectoscope two">
+                    </div>
+                    <div class="title title-about">UI/UX Design</div>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+                    aliquam architecto libero vero veniam!
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="usefull">
+        <div class="container">
+            <div class="before title title-skill">Опыт</div>
+            <h2 class="title title-usefull">Чем я буду полезен</h2>
+            <div class="wand-down wand-down-mod"></div>
+            <div class="usefull__block">
+                <div class="education">
+                    <div class="wand-vertical"></div>
+                    <h3 class="litle before title">Образование</h3>
+                    <ul>
+                        <li>
+                            <div class="universities">
+                                <div class="head">
+                                   <div class="before icon university-icon">
+                                    <img src="src/social-icons/university.svg" alt="universitiy">
+                                    </div>
+                                    <div class="local">
+                                        <div class="wand-horisontal"></div>
+                                        <h4 class="h4">МГТУ им. Н. Э. Баумана</h4>
+                                        <div class="loc courses-about">Диплом магистра | Москва (2014-2020)</div>
+                                    </div>
+                                </div>
+                                <div class="description university-description">
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Libero nostrum
+                                    excepturi, tenetur esse eos repellendus
+                                    nemo quod eius repellat, facere
+                                    quibusdam ab necessitatibus, soluta
+                                    voluptate consequatur commodi inventore
+                                    expedita. Blanditiis!
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="courses">
+                                <div class="head">
+                                    <div class="before icon courses-icon">
+                                        <img src="src/social-icons/courses.svg" alt="courses">
+                                    </div>
+                                    <div class="local">
+                                        <div class="wand-horisontal"></div>
+                                        <h4  class="h4">Udemy</h4>
+                                        <div class="loc courses-about">Курсы по
+                                            Web-разработке</div>
+                                    </div>
+                                    <div class="description courses-description">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eum unde voluptatibus obcaecati quibusdam nesciunt sint fugiat enim sit, tempore non, ducimus nemo! Facere saepe tempore dicta porro, vero officia.
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill-work">
+                    <div class="wand-vertical"></div>
+                    <h3 class="litle before title">Опыт работы</h3>
+                    <ul>
+                        <li>
+                            <div class="skill-work">
+                                <div class="head">
+                                    <div class="before icon skill-work-icon">
+                                        <img src="src/social-icons/developer.svg" alt="developer">
+                                    </div>
+                                    <div class="local">
+                                        <div class="wand-horisontal"></div>
+                                        <h4  class="h4">Front-End Developer</h4>
+                                        <div class=" loc skill-work-local">EPAM | Москва
+                                            (2018-2019)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="description skill-work-description">
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Libero nostrum
+                                    excepturi, tenetur esse eos repellendus
+                                    nemo quod eius repellat, facere
+                                    quibusdam ab necessitatibus, soluta
+                                    voluptate consequatur commodi inventore
+                                    expedita. Blanditiis!
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="design">
+                                <div class="head">
+                                    <div class="before icon design-icon">
+                                        <img src="src/social-icons/designer.svg" alt="design">
+                                    </div>
+                                    <div class="local">
+                                        <div class="wand-horisontal"></div>
+                                        <h4  class="h4">UI/UX Designer</h4>
+                                        <div class="loc design-about">Squad Team |
+                                            Москва (2018)</div>
+                                    </div>
+                                    <div class=" description design-description">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Iusto eum unde
+                                        voluptatibus obcaecati quibusdam
+                                        nesciunt sint fugiat enim sit, tempore
+                                        non, ducimus nemo! Facere saepe tempore
+                                        dicta porro, vero officia.
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="src/js/script.js"></script>
 </body>
 </html>
