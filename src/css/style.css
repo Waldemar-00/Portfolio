@@ -29,10 +29,10 @@ a {
     text-decoration: none;
 }
 
-.promo {
+.section {
+    padding-top: 120px;
     min-height: 100vh;
-    position: relative;
-    background: var(--main-blue) no-repeat url('../img/Background.jpg') 50%/cover;
+    background-color: #fff;
 }
 
 .container {
@@ -56,6 +56,15 @@ a {
     background-color: var(--main-orange);
     z-index: -1;
 }
+
+/*! promo */
+
+.promo {
+    min-height: 100vh;
+    position: relative;
+    background: var(--main-blue) no-repeat url('../img/Background.jpg') 50%/cover;
+}
+
 .title-fs16 {
     position: relative;
     top:206px;
@@ -266,11 +275,6 @@ a {
 
 /*! ABOUT-ME*/
 
-.about-me {
-    padding-top: 120px;
-    min-height: 100vh;
-    background-color: #fff;
-}
 
 .about-wrapp {
     display: grid;
@@ -370,11 +374,6 @@ a {
 
 /*!USEFULL*/
 
-.usefull {
-    padding-top: 120px;
-    min-height: 100vh;
-    background-color: #fff;
-}
 
 .title-skill{
     text-align: center;
@@ -480,3 +479,99 @@ a {
     width: 51px;
     height: 1px;
 }
+
+/*! i-use */
+
+.title-i-use {
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.h2-i-use {
+    position: static;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.wand-i-use {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.before-skills.before::before {
+    top: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.i-use-flex {
+    margin: 60px 0px 0px 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.svg-flex {
+    margin: 0px 13px 13px 0px;
+    width: 269.5px;
+    min-height: 270px;
+    transition: all 0.9s;
+}
+
+.svg-flex:hover {
+    width: 310px;
+    height: 310px;
+    transition: all 0.6s;
+}
+
+.percents {
+    padding-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 70px);
+    column-gap: 45px;
+    row-gap: 38px;
+}
+
+.percents-col {
+    position: relative;
+    padding-left: 10px;
+}
+
+.percents-col h3 {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.percents h3.before::before {
+    top: -7px;
+    left: 0px;
+}
+
+.percents-col h3 span {
+    position: absolute;
+    right: 0px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.volum {
+    margin-top: 27px;
+    border-radius: 4px;
+    height: 14px;
+    background-color: var(--main-orange);
+}
+.volum span {
+    display: inline-block;
+    position: relative;
+    top: -4px;
+    z-index: -1; 
+    border-radius: 4px;
+    height: 14px;
+    width: 350px;
+    background-color: #E8E4DE;
+}
+
+
+
+
+
