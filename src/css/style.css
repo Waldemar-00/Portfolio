@@ -45,6 +45,12 @@ a {
     font-weight: 700;
 }
 
+.title-center {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
 .before::before {
     content: '';
     position: absolute;
@@ -374,10 +380,6 @@ a {
 
 /*!USEFULL*/
 
-
-.title-skill{
-    text-align: center;
-}
 .title-skill.before::before {
     top: -6px;
     left: 50%;
@@ -385,7 +387,6 @@ a {
 }
 
 .title-usefull {
-    text-align: center;
     font-size: 36px;
     line-height: 60px;
     margin-top: 6px;
@@ -482,14 +483,8 @@ a {
 
 /*! i-use */
 
-.title-i-use {
-    text-align: center;
-    margin-bottom: 6px;
-}
-
 .h2-i-use {
     position: static;
-    text-align: center;
     margin-bottom: 25px;
 }
 
@@ -571,6 +566,52 @@ a {
     background-color: #E8E4DE;
 }
 
+/*! PORTFOLIO-PHOTO*/
+
+.portfolio-photo-href {
+    position: relative;
+}
+
+.before-porfolio {
+    position: relative;
+    top: 0px;
+    z-index: 1;
+}
+.before-porfolio.before::before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.photo-wrap {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 280px);
+    grid-auto-rows: 280px;
+    gap: 5px;
+}
+.portfolio-photo-href .wand-down {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tall {
+    grid-row: 1/3;
+    grid-column: 4/5;
+}
+.long{
+    grid-row: 2/3;
+    grid-column: 2/4 ;
+}
+.photo img {
+    transition: all 0.5s;
+}
+.photo img:hover {
+    transform: scale(1.05);
+    border-radius: 3px;
+    filter: brightness(110%);
+    transition: all 0.5s;
+}
 
 
 
