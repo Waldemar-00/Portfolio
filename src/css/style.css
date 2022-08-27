@@ -613,6 +613,60 @@ a {
     transition: all 0.5s;
 }
 
+/*! Price*/
+
+.title-price {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.price .wand-down {
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.price .before::before {
+    left: calc(50% + 1px);
+    transform: translateX(-50%);
+}
+
+.price-wrap {
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(44px, auto);
+    column-gap: 327px;
+    row-gap: 15px;
+}
+
+.price-list {
+    padding-left: 25px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-auto-rows: minmax(22px, auto);
+    row-gap: 5px;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.price-price {
+    display: flex;
+    justify-content: end;
+}
+.span-down {
+    grid-column: 1/3;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.price-list .litle.before::before {
+    top: 3px;
+    left: 7px;
+}
+
 
 
 
