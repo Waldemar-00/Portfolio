@@ -6,7 +6,7 @@
     --main-color-text: #323a42;
 }
 
-*, *::after, *::before {
+*, *::after, *::before, input, span {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -31,7 +31,7 @@ a {
 
 .section {
     padding-top: 120px;
-    min-height: 100vh;
+    height: auto;
     background-color: #fff;
 }
 
@@ -614,7 +614,11 @@ a {
 }
 
 /*! Price*/
-
+.section-litle {
+    padding-top: 60px;
+    min-height: 460px;
+    background-color: #fff;
+}
 .title-price {
     font-size: 16px;
     line-height: 24px;
@@ -652,8 +656,7 @@ a {
 }
 
 .price-price {
-    display: flex;
-    justify-content: end;
+    justify-self: end;
 }
 .span-down {
     grid-column: 1/3;
@@ -667,6 +670,128 @@ a {
     left: 7px;
 }
 
+/*! contacts */
+
+.contacts .about-wrapp {
+    grid-template-rows: minmax(150px, auto);
+    row-gap: 0px;
+}
+
+.data-out {
+    display: grid;
+    grid-template-columns: repeat(2, 280px);
+    grid-template-rows: 45px 190px;
+    row-gap: 30px;
+    column-gap: 25px;
+}
+
+.text-area {
+    grid-row: 2/3;
+    grid-column: 1/3;
+}
+
+.inputs, .text-area {
+    position: relative;
+}
+
+.feedback input, textarea {
+    width: 100%;
+    height: 100%;
+    padding: 0px 20px;
+    font-size: 12px;
+    line-height: 18px;
+    resize: none;
+}
+
+.label, .area {
+    display: inline-block;
+    height: 18px;
+    width: auto;
+    padding: 0px 8px;
+    background-color: #fff;
+    position: absolute;
+    left: 12px;
+    top: -9px;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.contacts {
+    position: relative;
+    top: -90px;
+}
+.contact-ways {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.social-contacts {
+    position: absolute;
+    top: 162px;
+    left: 0;
+}
+
+.social-contacts a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0px 20px 20px 0px;
+}
+
+.social-contacts a:hover {
+    transform: rotate(360deg);
+    transition: all 0.6s;
+}
+
+.or {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+}
 
 
+form .btn {
+    position: absolute;
+    bottom: 0px;
+    margin-top: 28px;
+    border: none;
+    width: 219px;
+    height: 45px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.police {
+    display: inline-block;
+    position: relative;
+    top: 44px;
+    left: 240px;
+    width: 350px;
+    height: 18px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.police input {
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+    width: 11px;
+    height: 12px;
+    padding-top: 2px;
+}
+
+.police span {
+    padding-left: 20px;
+}
+
+.police a {
+    color: #2306D6;
+    text-decoration: underline;
+}
 
