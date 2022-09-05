@@ -24,7 +24,7 @@ body {
 img {
     width: 100%;
     height: 100%;
-    /* object-fit: cover; */
+    object-fit: cover;
 }
 a {
     text-decoration: none;
@@ -581,6 +581,12 @@ a {
 .portfolio-photo-href {
     position: relative;
 }
+.portfolio-photo-href h2 {
+    margin-top: 26px;
+}
+.portfolio-photo-href wand {
+    top: 120px;
+}
 
 .before-porfolio {
     position: relative;
@@ -596,8 +602,8 @@ a {
     margin-top: 60px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 280px);
-    grid-auto-rows: 280px;
+    grid-template-rows: repeat(2, auto);
+    grid-auto-rows: auto;
     gap: 5px;
 }
 .portfolio-photo-href .wand-down {
@@ -609,7 +615,7 @@ a {
     grid-row: 1/3;
     grid-column: 4/5;
 }
-.long{
+.long {
     grid-row: 2/3;
     grid-column: 2/4 ;
 }
@@ -647,10 +653,11 @@ a {
 
 .price-wrap {
     margin-top: 90px;
+    padding: 0px 50px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(44px, auto);
-    column-gap: 327px;
+    column-gap: 220px;
     row-gap: 15px;
 }
 
@@ -826,6 +833,9 @@ form .btn {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 70px);
     }
+    .price-wrap {
+        column-gap: 120px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -882,6 +892,9 @@ form .btn {
     .usefull__block h3 {
         margin-bottom: 15px;
     }
+    .price-wrap {
+        grid-template-columns: 1fr;
+    }
     }
 
 @media (max-width: 768px) {
@@ -937,6 +950,10 @@ form .btn {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, auto);
         justify-content: space-evenly;
+    }
+    .price-wrap {
+        padding: 0px 10px;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -1085,10 +1102,25 @@ form .btn {
         grid-template-rows: repeat(3, 70px);
         column-gap: unset;
     }
-}
-@media (max-width: 355px) {
-    .wand-i-use {
-        top: 118px;
+    .photo-wrap {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(1, 280px);
+        grid-template-rows: repeat(6, 280px);
+        justify-content: center;
+        grid-auto-rows: 280px;
+        gap: 5px;
+    }
+    .tall, .long{
+        grid-row: unset;
+        grid-column: unset;
+    }
+    .price-wrap {
+        margin-top: 60px;
+        padding: 0px 5px;
+    }
+    .price-list {
+        font-size: 12px;
     }
 }
 
