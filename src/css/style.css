@@ -69,7 +69,7 @@ a {
 .promo {
     min-height: 100vh;
     position: relative;
-    background: var(--main-blue) no-repeat url('../img/Background.jpg') 50%/cover;
+    background: var(--main-blue) no-repeat url('../img/Background.svg') 50%/cover;
 }
 
 .title-fs16 {
@@ -524,7 +524,9 @@ a {
     height: 105%;
     transition: all 0.6s;
 }
-
+.svg-grid img {
+    object-fit: unset;
+}
 .percents {
     padding-top: 120px;
     display: grid;
@@ -836,6 +838,15 @@ form .btn {
     .price-wrap {
         column-gap: 120px;
     }
+    .contacts .about-wrapp {
+        grid-template-columns: 1fr;
+        grid-template-rows: 245px 395px;
+        column-gap: unset;
+        padding-left: 50px;
+    }
+    .contacts .about-photo {
+        display: none;
+    }
 }
 
 @media (max-width: 992px) {
@@ -954,6 +965,19 @@ form .btn {
     .price-wrap {
         padding: 0px 10px;
         grid-template-columns: 1fr;
+    }
+    .contacts .about-wrapp {
+        padding: 0px 20px;
+    }
+    .data-out {
+        grid-template-columns: repeat(2, 240px);
+    }
+    .police span {
+        display: inline-block;
+        width: 205px;
+    }
+    form .btn {
+        bottom: -6px;
     }
 }
 
@@ -1122,8 +1146,55 @@ form .btn {
     .price-list {
         font-size: 12px;
     }
+    .contacts .about-wrapp {
+        grid-template-columns: 300px;
+        padding: 0px 10px;
+    }
+    .data-out {
+        grid-template-columns: 300px;
+        grid-template-rows: 45px 45px 190px;
+    }
+    .contacts .text-area {
+        grid-column: unset;
+        grid-row: unset;
+    }
+    .contacts .about-biography {
+        grid-row: 1;
+        grid-column: 1;
+        left: 10px;
+    }
+    form .btn {
+        bottom: -142px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .police {
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 202px;
+    }
+    .contacts .text-area input, textarea {
+        width: 100%;
+    }
+    .contacts.section {
+        margin-top: 20px;
+    }
+    .social-contacts {
+        top: 184px;
+    }
+    .contacts .title-fs16-about {
+        width: 200px;
+    }
+    .contacts .abouit-me__descr {
+        width: 280px;
+    }
 }
-
+@media (max-width: 352px) {
+    .wand-i-use {
+        top: 115px;
+    }
+}
 
 
 
